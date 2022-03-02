@@ -25,15 +25,14 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 
 
-GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_Email = 'patricio.rodriguez+Applicantyrurv@onetree.com'
 GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
 GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 
 
 // Set TC variables
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
-
+String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
 
 
 // Go to Login Page
@@ -65,6 +64,7 @@ WebUI.waitForPageLoad(30)
 String currentImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
 
 // Compare ScreenShots. First Screenshot is a Correct Example. The second Screenshot is the one taken on the test case
+System.out.println('\nCurrentImgDir: ' + currentImgDir + '\nExpectedImgDir= ' + expectedImgDir + '\n')
 CustomKeywords.'compareImages.compareImages.compareImagesTest'(expectedImgDir, currentImgDir)
 
 // Close all the Tabs and Browser

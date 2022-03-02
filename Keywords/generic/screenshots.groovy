@@ -33,7 +33,7 @@ public class screenshots {
 
 		String screenshotName = 'screenshot-' + todayDate
 
-		String screenshotDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\' + screenshotName + '.png'
+		String screenshotDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\' + screenshotName + '.png'
 
 		System.out.println('FileName:' + screenshotName)
 

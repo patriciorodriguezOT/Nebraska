@@ -28,7 +28,7 @@ GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
 GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 // Set TC variables
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
+String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
 
 
 

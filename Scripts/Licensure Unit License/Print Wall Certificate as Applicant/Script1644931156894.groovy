@@ -29,7 +29,7 @@ GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 // Set TC variables
 int currentTab = 0
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
+String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
 String actualImgDir = ""
 
 

@@ -131,14 +131,14 @@ public class Page_Applicant_Home {
 
 		WebUI.switchToDefaultContent()
 	}
-	
-	
+
+
 	@Keyword
 	def verifyUserIsLogged (String expectedUserID) {
 		WebUI.waitForElementVisible(spanUserId, 0)
-		
+
 		String currentUserId = WebUI.getText(spanUserId)
-		
+
 		WebUI.verifyMatch(currentUserId, expectedUserID, false, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 }

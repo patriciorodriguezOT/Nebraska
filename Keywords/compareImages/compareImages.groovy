@@ -56,9 +56,9 @@ public class compareImages {
 	@Keyword
 	def compareImagesTest (String expectedImage, String currentImage) {
 
-		Image image1 = Toolkit.getDefaultToolkit().getImage(currentImage);
+		Image image1 = Toolkit.getDefaultToolkit().getImage(expectedImage);
 
-		Image image2 = Toolkit.getDefaultToolkit().getImage(expectedImage);
+		Image image2 = Toolkit.getDefaultToolkit().getImage(currentImage);
 
 		PixelGrabber grab1 = new PixelGrabber (image1 , 0 ,0,-1,-1,false);
 
@@ -95,7 +95,7 @@ public class compareImages {
 		if (java.util.Arrays.equals(data1,data2)==true){
 			logger.logPassed('aynı')
 		} else {
-			BufferedImage expectedImage3 = ImageIO.read(new File(currentImage))
+			BufferedImage expectedImage3 = ImageIO.read(new File(expectedImage))
 
 			BufferedImage expectedImage4 = ImageIO.read(new File(currentImage))
 
@@ -107,10 +107,10 @@ public class compareImages {
 
 			Path f = Paths.get(System.getProperty("user.dir"))
 					.resolve('Screenshots')
-					.resolve(expectedImage + '_Different_WalletCard.png')
+					.resolve(currentImage + '_Different_WalletCard.png')
 			ImageIO.write(diff.getMarkedImage(),"PNG", f.toFile())
 
-			System.out.println('\n diffImage= '+diffImage.getColorModel())
+			System.out.println('\n diffImage path= ' + f + '\n')
 
 			KeywordUtil.markFailed("Wallet Card sceenshot is not equal to the expected screenshot")
 

@@ -6,13 +6,12 @@
    <elementGuidId>25f1bc9a-74ea-41f8-9d84-0c940c0f3835</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//html/body/div[1]/div/div/p/a
-</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>p > a[alt=&quot;View your Finances&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'View your Finances')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -24,12 +24,12 @@ import java.util.Calendar as Calendar
 import com.kms.katalon.core.util.KeywordUtil
 
 
-GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_Email = 'patricio.rodriguez+Applicantyrurv@onetree.com'
 GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
 GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 // Set TC variables
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
+String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
 
 
 
@@ -43,7 +43,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_LU_Staff_UserName, Glob
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 

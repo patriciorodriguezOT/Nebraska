@@ -30,7 +30,7 @@ int currentTab
 String licenseType = 'Physical Therapist'
 String startDate
 String endDate
-String alertTextExpected = 'The latest License Details Status record has already been marked as Inactive'
+String alertTextExpected = 'The License has been set to Inactive and the License Details Status record has been created.'
 String alertText
 String expectedLicenseStatus = 'Inactive'
 
@@ -47,7 +47,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_Admin_Username, GlobalV
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 
