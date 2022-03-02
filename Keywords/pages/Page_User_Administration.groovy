@@ -21,8 +21,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Page_User_Administration {
-	
-	
+
+
 	private TestObject buttonMainSearchButton		= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/a_Search Button')
 	private TestObject inputSearchCriteria			= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/Search Options/input_Search Criteria')
 	private TestObject buttonSearchButton			= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/Search Options/input_SearchButton')
@@ -30,43 +30,40 @@ public class Page_User_Administration {
 	private TestObject buttonNewUser				= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/span_New User')
 	private TestObject checkboxFirstRecord			= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/User List/input_checkboxFIrstRecord')
 	private TestObject checkboxSecondRecord			= findTestObject('Page_Home_Admin_VisualVault/Page_VisualVault_Control Panel/Page_VisualVault_Control Panel_AdminTools/User Administration/User List/input_checkboxSecondRecord')
-	
-	
+
+
 	@Keyword
 	def clickOnSearchMainButton () {
 		WebUI.waitForElementVisible(buttonMainSearchButton, 0)
 
 		WebUI.click(buttonMainSearchButton)
 	}
-	
-	
-	
+
+
+
 	@Keyword
 	def enterSearchCriteria (String searchCriteria) {
 		WebUI.waitForElementVisible(inputSearchCriteria, 0)
 
 		WebUI.sendKeys(inputSearchCriteria, searchCriteria)
 	}
-	
-	
-	
+
+
+
 	@Keyword
 	def clickOnSearchButton () {
 		WebUI.waitForElementVisible(buttonSearchButton, 0)
 
 		WebUI.click(buttonSearchButton)
 	}
-	
-	
+
+
 	@Keyword
 	def verifyUniqueRecordOnList () {
 		WebUI.waitForElementVisible(checkboxFirstRecord, 0)
-		
+
 		WebUI.verifyElementPresent(checkboxFirstRecord, 0)
-		
+
 		WebUI.verifyElementNotPresent(checkboxSecondRecord, 0)
 	}
-	
-	
-	
 }
