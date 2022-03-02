@@ -17,13 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 // Open Browser
 WebUI.openBrowser(GlobalVariable.G_Nebraska_Link)
 
 
 // Login with LU Staff user
-CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_Admin_Username, GlobalVariable.G_Admin_Pass)
+CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_LU_Staff_UserName, GlobalVariable.G_LU_Staff_Pass)
 
 
 // Go to User Administration section
@@ -42,12 +41,3 @@ CustomKeywords.'pages.Page_User_Administration.enterSearchCriteria'(GlobalVariab
 CustomKeywords.'pages.Page_User_Administration.clickOnSearchButton'()
 
 
-
-// Verify Unique User was found
-CustomKeywords.'pages.Page_User_Administration.verifyUniqueRecordOnList'()
-
-
-// Close Browser
-WebUI.closeBrowser()
-
-//Testeando los commits con GitHub
