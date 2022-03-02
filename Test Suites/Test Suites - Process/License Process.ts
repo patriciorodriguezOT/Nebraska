@@ -156,30 +156,6 @@
       <testCaseId>Test Cases/Licensure Unit License/Release a Hold on License Detail as LM</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7a41e059-53a2-44ad-b0d5-d46d1e32d300</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Print Wallet Card as LU Staff</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b9a53c27-4693-481c-8470-7f447d10f3ac</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Print Wallet Card as Applicant</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7d34679c-d8bc-46fa-842f-4d0e3f7b23ff</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Print Wall Certificate as LU Staff</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>04074b0b-183b-420f-94db-45f246caf040</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Print Wall Certificate as Applicant</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>2e8d522d-60dd-4a15-99dd-cb6984f5090e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

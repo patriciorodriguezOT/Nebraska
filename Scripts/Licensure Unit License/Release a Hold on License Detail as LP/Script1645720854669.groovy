@@ -18,6 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
+GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
+
+
 // Set variables
 String licenseType = 'Physical Therapist'
 String licenseStatus = 'On Hold'
@@ -35,7 +40,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_LP_Staff_UserName, Glob
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 

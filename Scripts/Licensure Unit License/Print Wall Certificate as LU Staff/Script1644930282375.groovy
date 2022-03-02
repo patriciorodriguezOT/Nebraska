@@ -23,6 +23,9 @@ import com.kms.katalon.core.testobject.ResponseObject
 import java.util.Calendar as Calendar
 import com.kms.katalon.core.util.KeywordUtil
 
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
+GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 // Set TC variables
 String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\NebraskaAutoTest\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
@@ -65,15 +68,15 @@ CustomKeywords.'pages.Page_Licensure_Unit_License.clickOnPrintWallCertificateBut
 WebUI.switchToWindowIndex(currentTab + 2)
 
 // Make sure Wallet Card Load Correctly
-System.sleep(5000)
+System.sleep(15000)
 
 WebUI.waitForPageLoad(30)
 
 // Take screenshot of the Wallet Card print view. It returns the path location of the image.
-String actualImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
+String currentImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
 
 // Compare ScreenShots. First Screenshot is a Correct Example. The second Screenshot is the one taken on the test case
-CustomKeywords.'generic.compareImages.compareImagesTest'(expectedImgDir, actualImgDir)
+CustomKeywords.'compareImages.compareImages.compareImagesTest'(expectedImgDir, currentImgDir)
 
 
 

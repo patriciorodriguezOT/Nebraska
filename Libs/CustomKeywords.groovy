@@ -389,8 +389,8 @@ def static "pages.Page_Licensure_Unit_Checklist_Task.clickOnCloseButton"() {
 }
 
 
-def static "pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton"() {
-    (new pages.Page_Home_Admin_LicenseDetails()).clickOnSearchRecordButton()
+def static "pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton"() {
+    (new pages.Page_Home_Admin_LicenseDetails()).clickOnMainSearchButton()
 }
 
 
@@ -1164,11 +1164,11 @@ def static "pages.Page_Home_Admin.clickOnIndividualLink"() {
 
 
 def static "compareImages.compareImages.compareImagesTest"(
-    	String test	
-     , 	String test1	) {
+    	String expectedImage	
+     , 	String currentImage	) {
     (new compareImages.compareImages()).compareImagesTest(
-        	test
-         , 	test1)
+        	expectedImage
+         , 	currentImage)
 }
 
 

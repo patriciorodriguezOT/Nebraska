@@ -19,9 +19,15 @@ import org.openqa.selenium.Keys as Keys
 import ws.GetToken as GetToken
 import generic.generic_functions as GenericFunctions
 import ws.GetLicenseDetailsStatus as GetLicenseDetailsStatus
-import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 import java.util.Calendar as Calendar
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+
+
+
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
+GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 
 
@@ -41,8 +47,6 @@ CustomKeywords.'pages.Page_Applicant_Home.clickOnViewAndPrintLicense'()
 
 System.sleep(1000)
 
-
-
 // Move to Next Window
 int currentTab = WebUI.getWindowIndex()
 
@@ -53,21 +57,15 @@ CustomKeywords.'pages.Page_Licensure_Unit_License.clickOnPrintWalletCardButton'(
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-System.sleep(5000)
+System.sleep(15000)
 
 WebUI.waitForPageLoad(30)
 
 // Take screenshot and save Path of img
-String actualImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
-
-System.out.println('\nactualImgDir: ' + actualImgDir + '\n')
-System.out.println('\nactualImgDir: ' + expectedImgDir + '\n')
-
+String currentImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
 
 // Compare ScreenShots. First Screenshot is a Correct Example. The second Screenshot is the one taken on the test case
-CustomKeywords.'generic.compareImages.compareImagesTest'(expectedImgDir, actualImgDir)
-
-
+CustomKeywords.'compareImages.compareImages.compareImagesTest'(expectedImgDir, currentImgDir)
 
 // Close all the Tabs and Browser
 WebUI.closeWindowIndex(currentTab + 2)
@@ -83,3 +81,4 @@ System.sleep(2000)
 WebUI.switchToWindowIndex(currentTab)
 
 WebUI.closeBrowser()
+

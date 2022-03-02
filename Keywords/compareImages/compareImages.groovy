@@ -54,11 +54,11 @@ import com.kms.katalon.core.logging.KeywordLogger
 public class compareImages {
 
 	@Keyword
-	def compareImagesTest (String test, String test1) {
+	def compareImagesTest (String expectedImage, String currentImage) {
 
-		Image image1 = Toolkit.getDefaultToolkit().getImage(test);
+		Image image1 = Toolkit.getDefaultToolkit().getImage(currentImage);
 
-		Image image2 = Toolkit.getDefaultToolkit().getImage(test1);
+		Image image2 = Toolkit.getDefaultToolkit().getImage(expectedImage);
 
 		PixelGrabber grab1 = new PixelGrabber (image1 , 0 ,0,-1,-1,false);
 
@@ -95,9 +95,9 @@ public class compareImages {
 		if (java.util.Arrays.equals(data1,data2)==true){
 			logger.logPassed('aynı')
 		} else {
-			BufferedImage expectedImage3 = ImageIO.read(new File(test))
+			BufferedImage expectedImage3 = ImageIO.read(new File(currentImage))
 
-			BufferedImage expectedImage4 = ImageIO.read(new File(test1))
+			BufferedImage expectedImage4 = ImageIO.read(new File(currentImage))
 
 			ImageDiffer imgDiff = new ImageDiffer()
 
@@ -107,7 +107,7 @@ public class compareImages {
 
 			Path f = Paths.get(System.getProperty("user.dir"))
 					.resolve('Screenshots')
-					.resolve(test1 + '_Different_WalletCard.png')
+					.resolve(expectedImage + '_Different_WalletCard.png')
 			ImageIO.write(diff.getMarkedImage(),"PNG", f.toFile())
 
 			System.out.println('\n diffImage= '+diffImage.getColorModel())

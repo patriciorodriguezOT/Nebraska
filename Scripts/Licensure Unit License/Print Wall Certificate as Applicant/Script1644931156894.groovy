@@ -23,6 +23,9 @@ import com.kms.katalon.core.testobject.ResponseObject
 import java.util.Calendar as Calendar
 import com.kms.katalon.core.util.KeywordUtil
 
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
+GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 // Set TC variables
 int currentTab = 0
@@ -54,19 +57,15 @@ CustomKeywords.'pages.Page_Licensure_Unit_License.clickOnPrintWallCertificateBut
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-System.sleep(8000)
+System.sleep(15000)
 
 WebUI.waitForPageLoad(30)
 
 // Take screenshot and save Path of img
-actualImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
-
-System.out.println('\nactualImgDir: ' + actualImgDir + '\n')
-System.out.println('\nactualImgDir: ' + expectedImgDir + '\n')
-
+currentImgDir = CustomKeywords.'generic.screenshots.getFullPageScreenshot'()
 
 // Compare ScreenShots. First Screenshot is a Correct Example. The second Screenshot is the one taken on the test case
-CustomKeywords.'generic.compareImages.compareImagesTest'(expectedImgDir, actualImgDir)
+CustomKeywords.'compareImages.compareImages.compareImagesTest'(expectedImgDir, currentImgDir)
 
 
 
