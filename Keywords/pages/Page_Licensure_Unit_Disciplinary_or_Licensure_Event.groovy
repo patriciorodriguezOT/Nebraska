@@ -63,19 +63,18 @@ public class Page_Licensure_Unit_Disciplinary_or_Licensure_Event {
 			case "Facility":
 				WebUI.click(dropdownEventTypeFacilityOpt);
 				break;
-		
+
 			case "Organization":
 				WebUI.click(dropdownEventTypeOrganizationOpt);
 				break;
-		
+
 			case "Professional":
 				WebUI.click(dropdownEventTypeProfessionalOpt);
 				break;
-		
+
 			default:
 				break;
 		}
-
 	}
 
 

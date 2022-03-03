@@ -189,4 +189,24 @@
       <initValue>'Password21*'</initValue>
       <name>LP_Staff_Pass</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4111111111111111'</initValue>
+      <name>G_CreditCardNum</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'11'</initValue>
+      <name>G_CreditCardExpMonth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2030'</initValue>
+      <name>G_CreditCardExpYear</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'123'</initValue>
+      <name>G_CreditCardSecCode</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

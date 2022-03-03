@@ -213,64 +213,29 @@ CustomKeywords.'pages.Page_Licensure_Unit_License_Application_Attestation.clickO
 
 
 // Complete Pay Information ---
-if (WebUI.verifyElementVisible(findTestObject('Page_Licensure Unit License Application/Pay/button_Pay Now'), 
-    FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('Page_Licensure Unit License Application/Pay/button_Pay Now'))
+if (CustomKeywords.'pages.Page_Licensure_Unit_License_Application_Pay.verifyPayNowBtnIsVisible'()) {
+	
+    CustomKeywords.'pages.Page_Licensure_Unit_License_Application_Pay.clickOnPayNowBtn'()
 
     WebUI.switchToWindowIndex(currentTab + 2)
 
-    WebUI.waitForElementVisible(findTestObject('Page_Licensure Unit Shopping Cart/span_Select Payment Type'), 
-        0)
+    System.sleep(10000)
 
-    WebUI.waitForElementClickable(findTestObject('Page_Licensure Unit Shopping Cart/button_Cancel and Close'), 
-        0)
+    CustomKeywords.'pages.Page_Licensure_Unit_Shopping_Cart.selectPaymentType'('Credit Card')
 
-    Thread.sleep(5000)
+    CustomKeywords.'pages.Page_Licensure_Unit_Shopping_Cart.clickOnPayOnline'()
 
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Cancel and Close'))
+    CustomKeywords.'pages.Page_Licensure_Unit_Shopping_Cart.completeCreditCardInfo'(GlobalVariable.G_Applicant_FirstName, GlobalVariable.G_Applicant_LastName, GlobalVariable.G_CreditCardNum, GlobalVariable.G_CreditCardExpMonth, GlobalVariable.G_CreditCardExpYear, GlobalVariable.G_CreditCardSecCode)
 
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Return to Form'))
-
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/span_Select Payment Type'))
-
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/li_Credit Card'))
-
-    WebUI.waitForElementVisible(findTestObject('Page_Licensure Unit Shopping Cart/button_Pay Online'), 
-        0)
-
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Pay Online'))
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_FIRSTNAME'), 
-        'pr')
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_LASTNAME'), 
-        'test')
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Card Number_ACCT'), 
-        CreditCard_Number)
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input__EXPMONTH'), 
-        ExpiredMonth_CreditCard)
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input__EXPYEAR'), 
-        ExpiredYear_CreditCard)
-
-    WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Security Code_CSC'), 
-        SecurityCode_CreditCard)
-
-    WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Submit'))
+    CustomKeywords.'pages.Page_Licensure_Unit_Shopping_Cart.clickOnSubmitButton'()
 
     WebUI.acceptAlert()
 
     WebUI.switchToWindowIndex(currentTab + 1)
 
-    WebUI.waitForElementVisible(findTestObject('Page_Licensure Unit License Application/Pay/Message Fee Paid/h5_Fees Paid'), 
-        0)
+    CustomKeywords.'pages.ModalDialog.verifyTitle'('Fees Paid')
 
-    WebUI.verifyElementText(findTestObject('Page_Licensure Unit License Application/Pay/Message Fee Paid/h5_Fees Paid'), 
-        'Fees Paid')
-
-    WebUI.click(findTestObject('Page_Licensure Unit License Application/Pay/Message Fee Paid/button_Payment Susscessful Ok'))
+    CustomKeywords.'pages.ModalDialog.clickOnOkaybutton'()
 }
 
 if (WebUI.verifyElementVisible(findTestObject('Page_Licensure Unit License Application/Pay/button_Submit'),	FailureHandling.OPTIONAL)) {

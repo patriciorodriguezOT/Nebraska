@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>License Process</name>
+   <name>Registration - License Application - License Processes</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>695929b5-3645-4af4-a0ae-1797fae12557</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Registration Successful - US Citizen - With SSN</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -44,13 +44,13 @@
    <testCaseLink>
       <guid>8e29290f-1c56-423f-aaa7-f5007fe95a98</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Reset Password and Complete Registration Process</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>75ec2ea7-1b03-40d7-b6cb-c2c313793e9a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Apply for a License - Physical Therapist</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -80,31 +80,31 @@
    <testCaseLink>
       <guid>1290db73-4425-4715-b47b-9aa86b0ee33d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Return License Application - Without Req More Info on any task</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>06f54f20-b32d-4212-8ed3-053609202649</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Return License Application</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8764c91b-e8cf-4375-9f57-e36967aa6296</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Complete Task returned and resubmit License Application</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7c7ec00e-abb6-47ff-9f5a-7745accde71b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Approve Physical Therapist Checklist Tasks</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a3591b1a-23e0-41ee-9dab-2eed7ab21d80</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Approve License Application</testCaseId>
    </testCaseLink>
    <testCaseLink>

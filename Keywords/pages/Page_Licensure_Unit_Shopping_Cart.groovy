@@ -17,6 +17,7 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.constants.CoreWebuiMessageConstants
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.thoughtworks.selenium.webdriven.commands.Click
@@ -31,6 +32,19 @@ public class Page_Licensure_Unit_Shopping_Cart {
 	private TestObject opt1FeeAmount						= findTestObject('Page_Licensure Unit Shopping Cart/Repeating Raw Control/td_Fee Amount Opt1')
 	private TestObject opt1TotalToPay						= findTestObject('Page_Licensure Unit Shopping Cart/Repeating Raw Control/td_Total to Pay Opt1')
 	private TestObject opt1FeeId							= findTestObject('Page_Licensure Unit Shopping Cart/Repeating Raw Control/div_Fee Id Opt1')
+	private TestObject buttonCancelAndClose					= findTestObject('Page_Licensure Unit Shopping Cart/button_Cancel and Close')
+	private TestObject dropdownPaymentType					= findTestObject('Page_Licensure Unit Shopping Cart/span_Select Payment Type')
+	private TestObject optionPaymentTypeCreditCard			= findTestObject('Page_Licensure Unit Shopping Cart/li_Credit Card')
+	private TestObject buttonPayOnline						= findTestObject('Page_Licensure Unit Shopping Cart/button_Pay Online')
+	private TestObject inputCardFirstName					= findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_FIRSTNAME')
+	private TestObject inputCardLastName					= findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_LASTNAME')
+	private TestObject inputCardNumber						= findTestObject('Page_Licensure Unit Shopping Cart/input_Card Number_ACCT')
+	private TestObject inputCardExpMonth					= findTestObject('Page_Licensure Unit Shopping Cart/input__EXPMONTH')
+	private TestObject inputCardExpYear						= findTestObject('Page_Licensure Unit Shopping Cart/input__EXPYEAR')
+	private TestObject inputCardSecurityCode				= findTestObject('Page_Licensure Unit Shopping Cart/input_Security Code_CSC')
+	private TestObject buttonSubmit							= findTestObject('Page_Licensure Unit Shopping Cart/button_Submit')
+	
+	
 
 
 
@@ -64,52 +78,63 @@ public class Page_Licensure_Unit_Shopping_Cart {
 
 		WebUI.verifyMatch(currentFeeId, feeID, false, FailureHandling.CONTINUE_ON_FAILURE)
 	}
-
-
-
+	
+	
 	@Keyword
-	def test () {
-		WebUI.waitForElementVisible(findTestObject('Page_Licensure Unit Shopping Cart/span_Select Payment Type'),
-				0)
-
-		WebUI.waitForElementClickable(findTestObject('Page_Licensure Unit Shopping Cart/button_Cancel and Close'),
-				0)
-
-		Thread.sleep(5000)
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Cancel and Close'))
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Return to Form'))
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/span_Select Payment Type'))
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/li_Credit Card'))
-
-		WebUI.waitForElementVisible(findTestObject('Page_Licensure Unit Shopping Cart/button_Pay Online'),
-				0)
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Pay Online'))
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_FIRSTNAME'),
-				'pr')
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Cardholder Name_LASTNAME'),
-				'test')
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Card Number_ACCT'),
-				CreditCard_Number)
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input__EXPMONTH'),
-				ExpiredMonth_CreditCard)
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input__EXPYEAR'),
-				ExpiredYear_CreditCard)
-
-		WebUI.sendKeys(findTestObject('Page_Licensure Unit Shopping Cart/input_Security Code_CSC'),
-				SecurityCode_CreditCard)
-
-		WebUI.click(findTestObject('Page_Licensure Unit Shopping Cart/button_Submit'))
-
-		WebUI.acceptAlert()
+	def clickOnCancelAndClose () {
+		WebUI.waitForElementClickable(buttonCancelAndClose, 20)
+		
+		WebUI.click(buttonCancelAndClose)
 	}
+	
+	
+	@Keyword
+	def clickOnPayOnline () {
+		WebUI.waitForElementClickable(buttonPayOnline, 20)
+		
+		WebUI.click(buttonPayOnline)
+	}
+	
+	
+	@Keyword
+	def clickOnSubmitButton () {
+		WebUI.waitForElementClickable(buttonSubmit, 20)
+		
+		WebUI.click(buttonSubmit)
+	}
+	
+	
+	@Keyword
+	def selectPaymentType (String paymentType) {
+		WebUI.waitForElementClickable(dropdownPaymentType, 20)
+		
+		WebUI.click(dropdownPaymentType)
+		
+		
+		switch (paymentType) {
+			case "Credit Card":
+				WebUI.click(optionPaymentTypeCreditCard);
+				break;
+				
+			default:
+				break;
+		}
+		
+	}
+	
+	@Keyword
+	def completeCreditCardInfo (String firstName, String lastName, String cardNumber, String cardExpMonth, String cardExpYear, String secCode) {
+		WebUI.sendKeys(inputCardFirstName, firstName)
+
+		WebUI.sendKeys(inputCardLastName, lastName)
+	
+		WebUI.sendKeys(inputCardNumber, cardNumber)
+	
+		WebUI.sendKeys(inputCardExpMonth, cardExpMonth)
+	
+		WebUI.sendKeys(inputCardExpYear, cardExpYear)
+	
+		WebUI.sendKeys(inputCardSecurityCode, secCode)
+	}
+
 }

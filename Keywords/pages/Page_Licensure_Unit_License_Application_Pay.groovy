@@ -26,16 +26,22 @@ import internal.GlobalVariable
 public class Page_Licensure_Unit_License_Application_Pay {
 
 
-	private TestObject buttonNext			= findTestObject('Page_Licensure Unit License Application/Education/button_Next')
+	private TestObject buttonPayNow						= findTestObject('Page_Licensure Unit License Application/Pay/button_Pay Now')
 
 
 
 
 
 	@Keyword
-	def clickOnNextButton () {
-		WebUI.waitForElementVisible(buttonNext, 0)
+	def clickOnPayNowBtn () {
+		WebUI.waitForElementVisible(buttonPayNow, 0)
 
-		WebUI.click(buttonNext)
+		WebUI.click(buttonPayNow)
+	}
+	
+	
+	@Keyword
+	def verifyPayNowBtnIsVisible () {
+		WebUI.verifyElementVisible(buttonPayNow, FailureHandling.OPTIONAL)
 	}
 }

@@ -195,6 +195,26 @@ Profile QA Env : Registration Form in Dev Environment</p>
      */
     public static Object LP_Staff_Pass
      
+    /**
+     * <p></p>
+     */
+    public static Object G_CreditCardNum
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CreditCardExpMonth
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CreditCardExpYear
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CreditCardSecCode
+     
 
     static {
         try {
@@ -239,6 +259,10 @@ Profile QA Env : Registration Form in Dev Environment</p>
             G_LM_Staff_Pass = selectedVariables['G_LM_Staff_Pass']
             G_LP_Staff_UserName = selectedVariables['G_LP_Staff_UserName']
             LP_Staff_Pass = selectedVariables['LP_Staff_Pass']
+            G_CreditCardNum = selectedVariables['G_CreditCardNum']
+            G_CreditCardExpMonth = selectedVariables['G_CreditCardExpMonth']
+            G_CreditCardExpYear = selectedVariables['G_CreditCardExpYear']
+            G_CreditCardSecCode = selectedVariables['G_CreditCardSecCode']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
