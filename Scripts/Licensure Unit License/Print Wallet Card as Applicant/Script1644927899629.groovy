@@ -25,14 +25,15 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 
 
-GlobalVariable.G_Applicant_Email = 'patricio.rodriguez+Applicantyrurv@onetree.com'
-GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
-GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanteihin@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PReihin'
+GlobalVariable.G_Applicant_LastName = 'Automationeznne'
 
 
 
 // Set TC variables
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
+String projectPath = System.getProperty("user.dir")
+String expectedImgDir = projectPath + '\\ScreenShots\\Expected Screenshots\\WalletCardScreenView.png'
 
 
 // Go to Login Page

@@ -33,9 +33,11 @@ public class screenshots {
 
 		String screenshotName = 'screenshot-' + todayDate
 
-		String screenshotDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\' + screenshotName + '.png'
+		String projectPath = System.getProperty("user.dir")
 
-		System.out.println('FileName:' + screenshotName)
+		String screenshotDir = projectPath + '\\ScreenShots\\' + screenshotName + '.png'
+
+		System.out.println('FileName:' + screenshotDir)
 
 		WebUI.takeFullPageScreenshot(screenshotDir)
 

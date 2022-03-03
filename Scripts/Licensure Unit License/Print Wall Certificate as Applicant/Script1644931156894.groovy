@@ -23,13 +23,18 @@ import com.kms.katalon.core.testobject.ResponseObject
 import java.util.Calendar as Calendar
 import com.kms.katalon.core.util.KeywordUtil
 
-GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
-GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
-GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
+
+
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanteihin@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PReihin'
+GlobalVariable.G_Applicant_LastName = 'Automationeznne'
+
+
 
 // Set TC variables
 int currentTab = 0
-String expectedImgDir = 'C:\\Users\\patricior-ot\\git\\Nebraska\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
+String projectPath = System.getProperty("user.dir")
+String expectedImgDir = projectPath + '\\ScreenShots\\Expected Screenshots\\WallCertificateScreenView.png'
 String actualImgDir = ""
 
 
