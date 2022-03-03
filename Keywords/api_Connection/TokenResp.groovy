@@ -36,7 +36,5 @@ public class TokenResp {
 
 		// Assign token to Global Variable
 		GlobalVariable.G_Token = WS.getElementPropertyValue(tokenResp, 'access_token')
-
-		System.out.println('Token: "'+ GlobalVariable.G_Token + '"')
 	}
 }
