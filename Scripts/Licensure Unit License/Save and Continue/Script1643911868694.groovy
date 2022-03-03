@@ -36,6 +36,7 @@ String today
 String newIssueDate
 String titleMD = 'Record Saved'
 String bodyMD = 'The record has been saved. The window will now close.'
+String licenseType = 'Physical Therapist'
 
 
 
@@ -70,6 +71,11 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 // I need to wait until this element Close Button is clickable, so Tab Title is updated correctly
 System.sleep(2000)
+
+
+// Verify License Information
+CustomKeywords.'pages.Page_Licensure_Unit_License.verifyLicenseInformation'(GlobalVariable.G_Applicant_FirstName, GlobalVariable.G_Applicant_LastName, licenseType)
+
 
 // Get current Issue Date
 String currentIssueDate = CustomKeywords.'pages.Page_Licensure_Unit_License.obtainIssueDate'()
