@@ -190,9 +190,6 @@
       <name>LP_Staff_Pass</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Direct link to all individuals manage menu section</description>
-      <initValue>'https://vv5qa.visualvault.com/app/NEDHHS/LIS/FormDataDetails?Mode=ReadOnly&amp;ReportID=19495dd1-529c-eb11-81fc-a5e993b5732d'</initValue>
-      <name>G_IndividualsAll_Link</name>
       <description></description>
       <initValue>'4111111111111111'</initValue>
       <name>G_CreditCardNum</name>
@@ -211,5 +208,10 @@
       <description></description>
       <initValue>'123'</initValue>
       <name>G_CreditCardSecCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://vv5qa.visualvault.com/app/NEDHHS/LIS/FormDataDetails?Mode=ReadOnly&amp;ReportID=19495dd1-529c-eb11-81fc-a5e993b5732d'</initValue>
+      <name>G_IndividualsAll_Link</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

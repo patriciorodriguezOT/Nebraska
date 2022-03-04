@@ -12,7 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>dfea2726-22ca-4b97-9668-6c4c65676fb3</testSuiteGuid>
    <testCaseLink>
-      <guid>87356ac5-ddb6-4ab2-8e8c-82c38d09dc9b</guid>
+      <guid>bfbfefbb-f8de-4812-9d81-c41e21119d72</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Registration Successful - US Citizen - With SSN</testCaseId>
@@ -42,7 +42,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>0e4c9c00-9ddb-44bf-bdca-dca7c1e7e6e6</guid>
+      <guid>8c71751c-1de4-4c2c-9dec-b6860ec2731b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Verify Individual Record Created - US Citizen - With SSN (via API)</testCaseId>

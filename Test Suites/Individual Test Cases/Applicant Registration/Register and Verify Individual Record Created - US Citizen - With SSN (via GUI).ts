@@ -12,9 +12,9 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>dc3258fb-e6ed-4499-a14a-12b380aeb42b</testSuiteGuid>
    <testCaseLink>
-      <guid>5ba9bffe-451d-4cc8-a9a5-aa66d189d71f</guid>
+      <guid>bdb04abd-fd00-41b4-aaa1-1f14e3fea4f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit User Registration/Verify Individual Record Created - US Citizen - With SSN (via API)</testCaseId>
+      <testCaseId>Test Cases/Licensure Unit User Registration/Register and Verify Individual Record Created - US Citizen - With SSN (via GUI)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

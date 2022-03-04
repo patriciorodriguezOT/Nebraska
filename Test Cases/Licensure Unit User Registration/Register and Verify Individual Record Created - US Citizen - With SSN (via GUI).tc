@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Freddie Test Case</description>
+   <description>Tc to register and verify Individual Record created via GUI for IMPL-1406</description>
    <name>Register and Verify Individual Record Created - US Citizen - With SSN (via GUI)</name>
    <tag></tag>
    <comment></comment>

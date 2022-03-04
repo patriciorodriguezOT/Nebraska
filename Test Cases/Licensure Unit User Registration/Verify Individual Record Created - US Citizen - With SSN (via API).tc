@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Freddie Test Case</description>
+   <description>Tc to verify Individual Record created via API for IMPL-1406</description>
    <name>Verify Individual Record Created - US Citizen - With SSN (via API)</name>
    <tag></tag>
    <comment></comment>

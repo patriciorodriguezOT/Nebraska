@@ -215,6 +215,11 @@ Profile QA Env : Registration Form in Dev Environment</p>
      */
     public static Object G_CreditCardSecCode
      
+    /**
+     * <p></p>
+     */
+    public static Object G_IndividualsAll_Link
+     
 
     static {
         try {
@@ -263,6 +268,7 @@ Profile QA Env : Registration Form in Dev Environment</p>
             G_CreditCardExpMonth = selectedVariables['G_CreditCardExpMonth']
             G_CreditCardExpYear = selectedVariables['G_CreditCardExpYear']
             G_CreditCardSecCode = selectedVariables['G_CreditCardSecCode']
+            G_IndividualsAll_Link = selectedVariables['G_IndividualsAll_Link']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
