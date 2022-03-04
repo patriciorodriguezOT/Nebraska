@@ -47,7 +47,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_LM_Staff_UserName, Glob
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 

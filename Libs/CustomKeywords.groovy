@@ -11,12 +11,6 @@ import com.kms.katalon.core.testobject.ResponseObject
 
 import com.kms.katalon.core.testobject.TestObject
 
-import com.applitools.eyes.selenium.Eyes
-
-import org.openqa.selenium.WebElement
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "pages.Page_Licensure_Unit_License_Application_Convictions.selectIsOnProbation"(
@@ -38,8 +32,13 @@ def static "pages.Page_Licensure_Unit_License_Application_Convictions.clickOnNex
 }
 
 
-def static "pages.Page_Licensure_Unit_License_Application_Pay.clickOnNextButton"() {
-    (new pages.Page_Licensure_Unit_License_Application_Pay()).clickOnNextButton()
+def static "pages.Page_Licensure_Unit_License_Application_Pay.clickOnPayNowBtn"() {
+    (new pages.Page_Licensure_Unit_License_Application_Pay()).clickOnPayNowBtn()
+}
+
+
+def static "pages.Page_Licensure_Unit_License_Application_Pay.verifyPayNowBtnIsVisible"() {
+    (new pages.Page_Licensure_Unit_License_Application_Pay()).verifyPayNowBtnIsVisible()
 }
 
 
@@ -367,8 +366,42 @@ def static "pages.Page_Licensure_Unit_Shopping_Cart.verifyOpt1OnRRC"(
 }
 
 
-def static "pages.Page_Licensure_Unit_Shopping_Cart.test"() {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).test()
+def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnCancelAndClose"() {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnCancelAndClose()
+}
+
+
+def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnPayOnline"() {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnPayOnline()
+}
+
+
+def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnSubmitButton"() {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnSubmitButton()
+}
+
+
+def static "pages.Page_Licensure_Unit_Shopping_Cart.selectPaymentType"(
+    	String paymentType	) {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).selectPaymentType(
+        	paymentType)
+}
+
+
+def static "pages.Page_Licensure_Unit_Shopping_Cart.completeCreditCardInfo"(
+    	String firstName	
+     , 	String lastName	
+     , 	String cardNumber	
+     , 	String cardExpMonth	
+     , 	String cardExpYear	
+     , 	String secCode	) {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).completeCreditCardInfo(
+        	firstName
+         , 	lastName
+         , 	cardNumber
+         , 	cardExpMonth
+         , 	cardExpYear
+         , 	secCode)
 }
 
 
@@ -508,6 +541,20 @@ def static "pages.Page_Licensure_Unit_License_Application_Checklist_Management.c
 
 def static "pages.Page_Licensure_Unit_License_Application_Checklist_Management.clickOnOpenRelatedFormButton"() {
     (new pages.Page_Licensure_Unit_License_Application_Checklist_Management()).clickOnOpenRelatedFormButton()
+}
+
+
+def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectIsCurrentlyuPracticing"(
+    	String answer	) {
+    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectIsCurrentlyuPracticing(
+        	answer)
+}
+
+
+def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectHasEverPracticed"(
+    	String answer	) {
+    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectHasEverPracticed(
+        	answer)
 }
 
 
@@ -1661,53 +1708,6 @@ def static "pages.Page_Applicant_MyFinances.clickOnPayOutstandingFees"() {
     (new pages.Page_Applicant_MyFinances()).clickOnPayOutstandingFees()
 }
 
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
-    	TestObject testObject	
-     , 	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
-        	testObject
-         , 	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-    	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-        	testName
-         , 	viewportSize)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
     	String baselineName	
      , 	String testName	
@@ -1716,4 +1716,12 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
         	baselineName
          , 	testName
          , 	viewportSize)
-}
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)

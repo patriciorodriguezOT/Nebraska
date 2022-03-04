@@ -35,7 +35,7 @@ public class Page_Home_Admin_LicenseDetails {
 	@Keyword
 	def clickOnMainSearchButton () {
 		System.sleep(5000)
-		
+
 		WebUI.waitForElementVisible(buttonSearchMain, 15)
 
 		WebUI.click(buttonSearchMain)

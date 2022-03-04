@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_View your Finances (1)</name>
+   <name>li_Yes</name>
    <tag></tag>
-   <elementGuidId>25f1bc9a-74ea-41f8-9d84-0c940c0f3835</elementGuidId>
+   <elementGuidId>e1252ebd-11cd-4795-bfca-8886bdba69ff</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>p > a[alt=&quot;View your Finances&quot;]</value>
+         <key>XPATH</key>
+         <value>//div/ul/li[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'View your Finances')]</value>
+         <key>CSS</key>
+         <value>#ea3a9637-a978-46df-8e99-c996e70486df-Yes</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,21 +21,28 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>href</name>
-      <type>Main</type>
-      <value>https://vv5qa.visualvault.com/app/NEDHHS/LIS/UserPortal?portalPageId=f50866aa-345f-ec11-820c-a59a35ae547a</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>target</name>
+      <name>role</name>
       <type>Main</type>
-      <value>_blank</value>
+      <value>option</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>k-item ng-star-inserted</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ea3a9637-a978-46df-8e99-c996e70486df-Yes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,62 +52,80 @@
       <value>-1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>alt</name>
+      <name>index</name>
       <type>Main</type>
-      <value>View your Finances</value>
+      <value>2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>View your Finances
-						</value>
+      <value>Yes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;icon-div&quot;]/p[1]/a[1]</value>
+      <value>id(&quot;ea3a9637-a978-46df-8e99-c996e70486df-Yes&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[contains(text(),'View your Finances')]</value>
+      <value>//li[@id='ea3a9637-a978-46df-8e99-c996e70486df-Yes']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='f2025fc5-2d8d-4f6e-9bdc-abe9a7db655d']/li[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='View your Finances']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[9]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(//a[contains(@href, 'https://vv5qa.visualvault.com/app/NEDHHS/LIS/UserPortal?portalPageId=f50866aa-345f-ec11-820c-a59a35ae547a')])[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Item'])[71]/following::li[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//p/a</value>
+      <value>//div/ul/li[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = 'https://vv5qa.visualvault.com/app/NEDHHS/LIS/UserPortal?portalPageId=f50866aa-345f-ec11-820c-a59a35ae547a' and @alt = 'View your Finances' and (text() = 'View your Finances
-						' or . = 'View your Finances
-						')]</value>
+      <value>//li[@id = 'ea3a9637-a978-46df-8e99-c996e70486df-Yes' and (text() = 'Yes' or . = 'Yes')]</value>
    </webElementXpaths>
 </WebElementEntity>

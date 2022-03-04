@@ -30,14 +30,13 @@ int currentTab
 String feeAmount = 50
 String allowPayments = 'No'
 String licenseType = 'Physical Therapist'
-String titleModalDialog = 'In-Process License Applications'
-String bodyModalDialog = "If you would like to associate the payment records to a license application, please click an option below and click " + '"' + 'Ok' + '"' + ". If not, please click 'Return to Form.'"
+String titleModalDialog = 'Record Saved'
+String bodyModalDialog = "The record has been saved."
 String status = 'Unpaid'
 String feeDescription = 'Certs, Dups, Inactive'
 String totalPaid = '$0.00'
 String totalDue = '$50.00'
 String feeId
-
 
 
 
@@ -52,7 +51,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_LU_Staff_UserName, Glob
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 

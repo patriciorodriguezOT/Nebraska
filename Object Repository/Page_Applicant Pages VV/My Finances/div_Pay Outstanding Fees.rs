@@ -6,6 +6,10 @@
    <elementGuidId>b4b1775a-8b9b-47f1-81ae-820e1ee4f43e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Pay Outstanding Fees' or . = 'Pay Outstanding Fees')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[(text() = 'Pay Outstanding Fees' or . = 'Pay Outstanding Fees')]</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>div.mydiv</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>License Process</name>
+   <name>Registration - License Application - License Processes</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -118,42 +118,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License/Add Fee</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8874e91f-2759-4390-97ff-0e4fd3e00af7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Cancel and Continue</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7400758d-e231-4777-b553-bb57d79ed5f4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Close License Details</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>dead59f8-ad3a-4222-840b-ed548534ea86</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Save and Continue</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e8a3e4b6-42a3-4305-989d-1e36157bc077</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Add a Hold on License Detail</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4947e20c-89d9-4743-93d8-e0f9a04bc202</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Release a Hold on License Detail as LP</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>65c0d487-5d78-4eb5-a234-3258317f114d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License/Release a Hold on License Detail as LM</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2e8d522d-60dd-4a15-99dd-cb6984f5090e</guid>

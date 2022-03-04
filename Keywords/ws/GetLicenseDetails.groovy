@@ -13,8 +13,8 @@ import internal.GlobalVariable
 public class GetLicenseDetails {
 	// Endpoint variables
 	String baseUrl = GlobalVariable.G_BaseUrl
-	String licenseDetailsID = "94179027-037e-ec11-a9d6-e507991dbdb7"
-	String applicantFirstName = "Apprentice+Training+Salon"
+	String licenseDetailsID = "04c45495-559a-ec11-a9d8-a898949011e1"
+	String applicantFirstName = ""
 
 	// Request variables
 	String endpoint = baseUrl + "/formtemplates/" + licenseDetailsID + "/forms?q=[First+Name]+eq+'" + applicantFirstName + "'&expand=true"

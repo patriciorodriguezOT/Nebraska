@@ -25,6 +25,9 @@ import generic.generic_functions as GenericFunctions
 import com.kms.katalon.core.testobject.ResponseObject
 
 
+GlobalVariable.G_Applicant_Email = 'pruebas.onetree+Applicanthldxj@gmail.com'
+GlobalVariable.G_Applicant_FirstName = 'PRyrurv'
+GlobalVariable.G_Applicant_LastName = 'Automationoiiod'
 
 GetToken getTokenReq = new GetToken()
 int currentTab
@@ -33,6 +36,7 @@ String today
 String newIssueDate
 String titleMD = 'Record Saved'
 String bodyMD = 'The record has been saved. The window will now close.'
+String licenseType = 'Physical Therapist'
 
 
 
@@ -47,7 +51,7 @@ CustomKeywords.'pages.Page_Login.login'(GlobalVariable.G_Admin_Username, GlobalV
 CustomKeywords.'pages.Page_Home_Admin.clickOnLicenseDetails'()
 
 // Search Applicant by First Name
-CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnSearchRecordButton'()
+CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.clickOnMainSearchButton'()
 
 CustomKeywords.'pages.Page_Home_Admin_LicenseDetails.selectFirstNameForSearch'()
 
@@ -67,7 +71,10 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 // I need to wait until this element Close Button is clickable, so Tab Title is updated correctly
 System.sleep(2000)
-WebUI.waitForElementClickable(findTestObject('Page_Licensure Unit License/button_Close'), 3000)
+
+
+// Verify License Information
+CustomKeywords.'pages.Page_Licensure_Unit_License.verifyLicenseInformation'(GlobalVariable.G_Applicant_FirstName, GlobalVariable.G_Applicant_LastName, licenseType)
 
 
 // Get current Issue Date

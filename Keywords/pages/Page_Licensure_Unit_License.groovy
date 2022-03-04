@@ -171,21 +171,21 @@ public class Page_Licensure_Unit_License {
 	// Actions on Discipline Tab
 	@Keyword
 	def clickOnDisciplinaryButton () {
-		WebUI.waitForElementVisible(buttonDisciplinary, 0)
+		WebUI.waitForElementVisible(buttonDisciplinary, 20)
 
 		WebUI.click(buttonDisciplinary)
 	}
 
 	@Keyword
 	def verifyDisciplineIsNotPresent () {
-		WebUI.waitForElementVisible(OpenLinkDiscipline1, 0)
+		WebUI.waitForElementVisible(OpenLinkDiscipline1, 10)
 
 		WebUI.verifyElementNotPresent(OpenLinkDiscipline1, 0, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 	@Keyword
 	def verifyDisciplineIsPresent () {
-		WebUI.waitForElementVisible(OpenLinkDiscipline1, 0)
+		WebUI.waitForElementVisible(OpenLinkDiscipline1, 20)
 
 		WebUI.verifyElementVisible(OpenLinkDiscipline1, FailureHandling.CONTINUE_ON_FAILURE)
 	}

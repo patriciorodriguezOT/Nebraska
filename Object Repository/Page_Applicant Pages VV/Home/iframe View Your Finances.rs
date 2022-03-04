@@ -6,12 +6,11 @@
    <elementGuidId>85a5d188-f7eb-4f17-ba37-80fb7a20066d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@src='https://sc-dev.visualvault.com/vv5qa/My%20Finances.html']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@src='https://sc-dev.visualvault.com/vv5qa/My%20Finances.html?ver=2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
