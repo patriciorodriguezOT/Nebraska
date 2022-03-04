@@ -537,6 +537,20 @@ def static "pages.Page_Licensure_Unit_License_Application_Checklist_Management.c
 }
 
 
+def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectIsCurrentlyuPracticing"(
+    	String answer	) {
+    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectIsCurrentlyuPracticing(
+        	answer)
+}
+
+
+def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectHasEverPracticed"(
+    	String answer	) {
+    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectHasEverPracticed(
+        	answer)
+}
+
+
 def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectHasBeenDeniedRight"(
     	String answer	) {
     (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectHasBeenDeniedRight(
