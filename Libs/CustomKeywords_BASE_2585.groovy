@@ -5,9 +5,9 @@
 
 import java.lang.String
 
-import java.lang.Object
-
 import com.kms.katalon.core.testobject.ResponseObject
+
+import java.lang.Object
 
 import com.kms.katalon.core.testobject.TestObject
 
@@ -38,13 +38,8 @@ def static "pages.Page_Licensure_Unit_License_Application_Convictions.clickOnNex
 }
 
 
-def static "pages.Page_Licensure_Unit_License_Application_Pay.clickOnPayNowBtn"() {
-    (new pages.Page_Licensure_Unit_License_Application_Pay()).clickOnPayNowBtn()
-}
-
-
-def static "pages.Page_Licensure_Unit_License_Application_Pay.verifyPayNowBtnIsVisible"() {
-    (new pages.Page_Licensure_Unit_License_Application_Pay()).verifyPayNowBtnIsVisible()
+def static "pages.Page_Licensure_Unit_License_Application_Pay.clickOnNextButton"() {
+    (new pages.Page_Licensure_Unit_License_Application_Pay()).clickOnNextButton()
 }
 
 
@@ -195,13 +190,6 @@ def static "pages.Page_Licensure_Unit_Appeals.verifyEmail"(
 
 def static "pages.Page_Licensure_Unit_License_Application_Examination.clickOnNextButton"() {
     (new pages.Page_Licensure_Unit_License_Application_Examination()).clickOnNextButton()
-}
-
-
-def static "api_Connection.IndividualRecordResp.getApplicantEmail"(
-    	Object individualRecordResp	) {
-    (new api_Connection.IndividualRecordResp()).getApplicantEmail(
-        	individualRecordResp)
 }
 
 
@@ -372,42 +360,8 @@ def static "pages.Page_Licensure_Unit_Shopping_Cart.verifyOpt1OnRRC"(
 }
 
 
-def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnCancelAndClose"() {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnCancelAndClose()
-}
-
-
-def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnPayOnline"() {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnPayOnline()
-}
-
-
-def static "pages.Page_Licensure_Unit_Shopping_Cart.clickOnSubmitButton"() {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).clickOnSubmitButton()
-}
-
-
-def static "pages.Page_Licensure_Unit_Shopping_Cart.selectPaymentType"(
-    	String paymentType	) {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).selectPaymentType(
-        	paymentType)
-}
-
-
-def static "pages.Page_Licensure_Unit_Shopping_Cart.completeCreditCardInfo"(
-    	String firstName	
-     , 	String lastName	
-     , 	String cardNumber	
-     , 	String cardExpMonth	
-     , 	String cardExpYear	
-     , 	String secCode	) {
-    (new pages.Page_Licensure_Unit_Shopping_Cart()).completeCreditCardInfo(
-        	firstName
-         , 	lastName
-         , 	cardNumber
-         , 	cardExpMonth
-         , 	cardExpYear
-         , 	secCode)
+def static "pages.Page_Licensure_Unit_Shopping_Cart.test"() {
+    (new pages.Page_Licensure_Unit_Shopping_Cart()).test()
 }
 
 
@@ -547,20 +501,6 @@ def static "pages.Page_Licensure_Unit_License_Application_Checklist_Management.c
 
 def static "pages.Page_Licensure_Unit_License_Application_Checklist_Management.clickOnOpenRelatedFormButton"() {
     (new pages.Page_Licensure_Unit_License_Application_Checklist_Management()).clickOnOpenRelatedFormButton()
-}
-
-
-def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectIsCurrentlyuPracticing"(
-    	String answer	) {
-    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectIsCurrentlyuPracticing(
-        	answer)
-}
-
-
-def static "pages.Page_Licensure_Unit_License_Application_Other_License.selectHasEverPracticed"(
-    	String answer	) {
-    (new pages.Page_Licensure_Unit_License_Application_Other_License()).selectHasEverPracticed(
-        	answer)
 }
 
 
@@ -1668,28 +1608,6 @@ def static "pages.Page_Licensure_Unit_License_Application_US_Citizenshi_Lawful_P
 }
 
 
-def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.clickOnSearchFilterBtn"() {
-    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).clickOnSearchFilterBtn()
-}
-
-
-def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.enterSearchCriteria"(
-    	String searchCriteriaValue	) {
-    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).enterSearchCriteria(
-        	searchCriteriaValue)
-}
-
-
-def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.clickOnSearchBtn"() {
-    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).clickOnSearchBtn()
-}
-
-
-def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.verifyIndividualRecordCreated"() {
-    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).verifyIndividualRecordCreated()
-}
-
-
 def static "pages.Page_License_Information.selectPhisicalTherapyProfessionalLicense"() {
     (new pages.Page_License_Information()).selectPhisicalTherapyProfessionalLicense()
 }
@@ -1740,8 +1658,14 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
 }
 
 
@@ -1761,12 +1685,6 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }

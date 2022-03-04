@@ -11,12 +11,6 @@ import com.kms.katalon.core.testobject.ResponseObject
 
 import com.kms.katalon.core.testobject.TestObject
 
-import com.applitools.eyes.selenium.Eyes
-
-import org.openqa.selenium.WebElement
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "pages.Page_Licensure_Unit_License_Application_Convictions.selectIsOnProbation"(
@@ -1713,6 +1707,7 @@ def static "pages.Page_Licensure_Unit_License_Application_Education.clickOnNextB
 def static "pages.Page_Applicant_MyFinances.clickOnPayOutstandingFees"() {
     (new pages.Page_Applicant_MyFinances()).clickOnPayOutstandingFees()
 }
+<<<<<<< HEAD
 
 
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
@@ -1724,19 +1719,19 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     	TestObject testObject	
      , 	String testName	) {
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
         	testObject
          , 	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
 }
 
 
@@ -1770,3 +1765,5 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
          , 	testName
          , 	viewportSize)
 }
+=======
+>>>>>>> 7162f6e0035a17e6bba6260291dd81aa4333e145

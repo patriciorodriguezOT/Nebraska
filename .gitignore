@@ -45,3 +45,7 @@ Libs/TempTestSuite*
 bin/lib/TempTestCase*
 Reports/
 *.swp
+
+# Bin and Libs folders
+\bin
+\Libs

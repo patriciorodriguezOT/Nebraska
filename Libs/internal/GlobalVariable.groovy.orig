@@ -196,6 +196,11 @@ Profile QA Env : Registration Form in Dev Environment</p>
     public static Object LP_Staff_Pass
      
     /**
+<<<<<<< HEAD
+     * <p>Profile QA Env : Direct link to all individuals manage menu section</p>
+     */
+    public static Object G_IndividualsAll_Link
+=======
      * <p></p>
      */
     public static Object G_CreditCardNum
@@ -214,6 +219,7 @@ Profile QA Env : Registration Form in Dev Environment</p>
      * <p></p>
      */
     public static Object G_CreditCardSecCode
+>>>>>>> 7162f6e0035a17e6bba6260291dd81aa4333e145
      
 
     static {
@@ -259,10 +265,14 @@ Profile QA Env : Registration Form in Dev Environment</p>
             G_LM_Staff_Pass = selectedVariables['G_LM_Staff_Pass']
             G_LP_Staff_UserName = selectedVariables['G_LP_Staff_UserName']
             LP_Staff_Pass = selectedVariables['LP_Staff_Pass']
+<<<<<<< HEAD
+            G_IndividualsAll_Link = selectedVariables['G_IndividualsAll_Link']
+=======
             G_CreditCardNum = selectedVariables['G_CreditCardNum']
             G_CreditCardExpMonth = selectedVariables['G_CreditCardExpMonth']
             G_CreditCardExpYear = selectedVariables['G_CreditCardExpYear']
             G_CreditCardSecCode = selectedVariables['G_CreditCardSecCode']
+>>>>>>> 7162f6e0035a17e6bba6260291dd81aa4333e145
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
