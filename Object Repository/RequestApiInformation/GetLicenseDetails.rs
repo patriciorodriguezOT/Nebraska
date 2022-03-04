@@ -14,6 +14,13 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/x-www-form-urlencoded</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer JhY1mpRSll727I36Io8DOcQ0i2JbWvLPv0lsMBCgIzIu-eL7SG-GrjKNhU9dEzVlEuViUvX7sx7OUmdvHNShL_94_a52emc0b_HfdVBlDjQSoYjQdC21wNq1zLggJWcperARmWb4CCQ-KEX59N_FWFl4TasTcFQCZUcOOcTdTOSYiCSRiQ4bDvmrM29ohD1ahVxqRRfagzTD-9xLEh_oovrWhUItEJQbhzWA1Mk-nyj8ZTRg1h7RcJRaOFp4oFVljtekDIweWpIoaMGDme_Mhwa9eAs0VC5LC7wivWEZOGoy7xe9d7ZGy8kIf_JCqkzJrcuzTCpW4dgnEoJRNezdKyNHm5wQCSty0zruHtbWvwxw09Nv</value>

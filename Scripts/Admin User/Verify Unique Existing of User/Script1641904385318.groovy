@@ -49,5 +49,3 @@ CustomKeywords.'pages.Page_User_Administration.verifyUniqueRecordOnList'()
 
 // Close Browser
 WebUI.closeBrowser()
-
-//Testeando los commits con GitHub
