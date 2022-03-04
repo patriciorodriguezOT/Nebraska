@@ -195,6 +195,11 @@ Profile QA Env : Registration Form in Dev Environment</p>
      */
     public static Object LP_Staff_Pass
      
+    /**
+     * <p>Profile QA Env : Direct link to all individuals manage menu section</p>
+     */
+    public static Object G_IndividualsAll_Link
+     
 
     static {
         try {
@@ -239,6 +244,7 @@ Profile QA Env : Registration Form in Dev Environment</p>
             G_LM_Staff_Pass = selectedVariables['G_LM_Staff_Pass']
             G_LP_Staff_UserName = selectedVariables['G_LP_Staff_UserName']
             LP_Staff_Pass = selectedVariables['LP_Staff_Pass']
+            G_IndividualsAll_Link = selectedVariables['G_IndividualsAll_Link']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

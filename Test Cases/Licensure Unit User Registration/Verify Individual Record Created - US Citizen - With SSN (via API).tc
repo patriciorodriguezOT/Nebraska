@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Freddie Test Case</description>
+   <name>Verify Individual Record Created - US Citizen - With SSN (via API)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b5f45ed-a5b7-4f83-8084-c6489c3c9566</testCaseGuid>
+</TestCaseEntity>
