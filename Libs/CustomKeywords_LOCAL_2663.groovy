@@ -11,11 +11,11 @@ import com.kms.katalon.core.testobject.ResponseObject
 
 import com.kms.katalon.core.testobject.TestObject
 
-import com.applitools.eyes.selenium.Eyes
+//import com.applitools.eyes.selenium.Eyes
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.RectangleSize
+//import com.applitools.eyes.RectangleSize
 
 
 
@@ -1661,7 +1661,7 @@ def static "pages.Page_Applicant_MyFinances.clickOnPayOutstandingFees"() {
     (new pages.Page_Applicant_MyFinances()).clickOnPayOutstandingFees()
 }
 
-
+/*
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
     	Eyes eyes	
      , 	WebElement element	) {
@@ -1717,3 +1717,4 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
          , 	testName
          , 	viewportSize)
 }
+*/

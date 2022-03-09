@@ -1,4 +1,4 @@
-package pages
+package tc_listener
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -17,40 +17,23 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.util.KeywordUtil
 
 import internal.GlobalVariable
 
-public class Page_Login {
-
-
-	@Keyword(keywordObject = "Browser")
-	def login (String username, String pass) {
-		WebUI.sendKeys(findTestObject('Page_Login_VisualVault/input_UserName'), username)
-
-		WebUI.sendKeys(findTestObject('Page_Login_VisualVault/input_Password'), pass)
-
-		WebUI.click(findTestObject('Page_Login_VisualVault/span_LoginButton'))
-	}
-
-
+public class tcl {
 	@Keyword
-	def enterUserName (String username) {
-		WebUI.waitForElementVisible(findTestObject('Page_Login_VisualVault/input_UserName'), 0)
+	def checkErrors(String[] tcId) {
 
-		WebUI.sendKeys(findTestObject('Page_Login_VisualVault/input_Password'), username)
-	}
+		for(parent in tcId) {
+			Boolean existPrevFailure = GlobalVariable.G_TestCasesFailed.contains(parent)
 
+			println existPrevFailure
 
-	@Keyword
-	def enterPassword (String pass) {
-		WebUI.waitForElementVisible(findTestObject('Page_Login_VisualVault/input_UserName'), 0)
-
-		WebUI.sendKeys(findTestObject('Page_Login_VisualVault/input_Password'), pass)
-	}
-
-
-	@Keyword
-	def clickLoginBtn() {
-		WebUI.click(findTestObject('Page_Login_VisualVault/span_LoginButton'))
+			if (existPrevFailure) {
+				KeywordUtil.markErrorAndStop('\nThe test case can not be completed if a previous TC failed')
+				println 'entro al error'
+			}
+		}
 	}
 }
