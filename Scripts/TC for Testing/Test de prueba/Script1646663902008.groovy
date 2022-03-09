@@ -27,7 +27,7 @@ import gmail_Connection.getEmailContent as getEmailContent
 //GlobalVariable.G_Applicant_FirstName = 'PRwryhv'							//In case that FirstName has not been set
 //GlobalVariable.G_Applicant_LastName = 'Automationmbony' 					//In case that FirstName has not been set
 //GlobalVariable.G_Applicant_Email = 'pruebas.onetree+2684@gmail.com'
-
+//test
 
 
 
