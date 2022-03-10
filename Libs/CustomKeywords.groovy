@@ -5,11 +5,17 @@
 
 import java.lang.String
 
-import com.kms.katalon.core.testobject.ResponseObject
-
 import java.lang.Object
 
+import com.kms.katalon.core.testobject.ResponseObject
+
 import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
+
+import org.openqa.selenium.WebElement
+
+import com.applitools.eyes.RectangleSize
 
 
 
@@ -189,6 +195,13 @@ def static "pages.Page_Licensure_Unit_Appeals.verifyEmail"(
 
 def static "pages.Page_Licensure_Unit_License_Application_Examination.clickOnNextButton"() {
     (new pages.Page_Licensure_Unit_License_Application_Examination()).clickOnNextButton()
+}
+
+
+def static "api_Connection.IndividualRecordResp.getApplicantEmail"(
+    	Object individualRecordResp	) {
+    (new api_Connection.IndividualRecordResp()).getApplicantEmail(
+        	individualRecordResp)
 }
 
 
@@ -1662,6 +1675,28 @@ def static "pages.Page_Licensure_Unit_License_Application_US_Citizenshi_Lawful_P
 }
 
 
+def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.clickOnSearchFilterBtn"() {
+    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).clickOnSearchFilterBtn()
+}
+
+
+def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.enterSearchCriteria"(
+    	String searchCriteriaValue	) {
+    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).enterSearchCriteria(
+        	searchCriteriaValue)
+}
+
+
+def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.clickOnSearchBtn"() {
+    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).clickOnSearchBtn()
+}
+
+
+def static "pages.Page_Home_Admin_Manage_Individual_IndividualsAll.verifyIndividualRecordCreated"() {
+    (new pages.Page_Home_Admin_Manage_Individual_IndividualsAll()).verifyIndividualRecordCreated()
+}
+
+
 def static "pages.Page_License_Information.selectPhisicalTherapyProfessionalLicense"() {
     (new pages.Page_License_Information()).selectPhisicalTherapyProfessionalLicense()
 }
@@ -1684,4 +1719,61 @@ def static "pages.Page_Licensure_Unit_License_Application_Education.clickOnNextB
 
 def static "pages.Page_Applicant_MyFinances.clickOnPayOutstandingFees"() {
     (new pages.Page_Applicant_MyFinances()).clickOnPayOutstandingFees()
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
+    	TestObject testObject	
+     , 	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
+        	testObject
+         , 	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
+    	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
+        	testName
+         , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }

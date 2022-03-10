@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Registration - License Application - License Processes</name>
+   <name>Registration - - License Application Denial Appeal</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>ee9625c8-37ac-4d07-a5db-89686c1e8b55</testSuiteGuid>
+   <testSuiteGuid>ff149689-3602-4e99-bdc0-8c62fdbdd803</testSuiteGuid>
    <testCaseLink>
-      <guid>695929b5-3645-4af4-a0ae-1797fae12557</guid>
+      <guid>02daefce-9713-45f4-a42a-1c250dfd8d89</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Registration Successful - US Citizen - With SSN</testCaseId>
@@ -42,43 +42,67 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e29290f-1c56-423f-aaa7-f5007fe95a98</guid>
+      <guid>aa4c4af8-327f-46c0-abda-df2110ff0bde</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit User Registration/Reset Password and Complete Registration Process</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>75ec2ea7-1b03-40d7-b6cb-c2c313793e9a</guid>
+      <guid>6e3f52c9-2875-419f-aa36-cd4d54a86e94</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Licensure Unit License Application/Apply for a License - Physical Therapist</testCaseId>
+      <testCaseId>Test Cases/Licensure Unit License Application/Apply for a License - Physical Therapist - Reciprocity</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>01db107b-17ea-4fe4-ac1f-4291ffa8aa1e</variableId>
+         <variableId>49858cd8-96a0-416a-8c7d-8010e91552b6</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b97fd85f-21d5-448b-98fd-f4b45f450720</variableId>
+         <variableId>391eebd1-92b7-4216-9936-a9e8f882a2ce</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b6037fc2-b2cf-4608-b4f6-81835fe70f58</variableId>
+         <variableId>5758f64e-d723-4cf7-acb4-e25eb6f6c9cc</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6a200090-67b3-438e-90ca-29de4ef8a608</variableId>
+         <variableId>c0facb11-fa8b-47fc-b92e-276e14980510</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>35f4a85d-a678-449b-bb44-693dd56f1e35</guid>
+      <guid>3f3896e0-cb56-4b76-aab6-f700d66f612b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Licensure Unit License Application/Return License Application - Without Req More Info on any task</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5ecb9c8b-c569-4108-8035-ac40eeb744e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Licensure Unit License Application/Mark License Deficient and keep the Application</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b4d5b39c-3aca-49e2-b26f-56fda63e39d8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Licensure Unit License Application/Complete Task returned when LU Staff kept the application</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0a5c7107-b0cd-4234-ab6b-38695d4b61e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Licensure Unit License Application/Create Denial Letter</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15d93abc-b8e4-4f0d-8855-5679090e7b5f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Licensure Unit License Application/Deny License Application</testCaseId>
